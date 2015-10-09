@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Life</title>
+
+    <script src= "jquery-1.11.3.js"></script>
+    <script src= "jquery-ui.js"></script>
+    <script src= "jquery-ui.min.js"></script>
+    <!--<script src= "a2.js"></script>-->
+    <script src= "myJS.js"></script>
+
+    <link rel="stylesheet" href="a2.css" type="text/css">
+    <link rel="stylesheet" href="jquery-ui.min.css" type="text/css">
+
+</head>
+
+
+<br>
+
+    <h1>Conway's Game of Life</h1>
+    <h3>Xubin Zheng</h3>
+
+<div id="Button">
+
+
+    <a id="startBtn">START</a>
+
+    <a id="stopBtn">STOP</a>
+
+    <a id="resetBtn">RESET</a>
+
+    <a id="nextBtn">NEXT</a>
+
+    <a id="randomBtn">RANDOM</a>
+
+    <div id="slider">
+        <p>Size from 20 to 200</p>
+        <div id="sizeSlider"></div>
+        <p>Speed from 0 to 3s</p>
+        <div id="speedSlider"></div>
+    </div>
+
+</div>
+
+
+
+<div id="myTable" align="center"></div>
+
+
+<div id="menu">
+    <p>The radius of neighborhood</p>
+    <select id="neighbor">
+        <option selected="selected">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+
+
+    <p>Death by Lonliness</p>
+    <select id="Lonliness"></select>
+
+
+    <p>Death by Overpopulation</p>
+    <select id="OverPop"></select>
+
+
+
+
+    <p>Generation with min and max</p>
+    <select id="GenMin"></select>
+
+    <select id="GenMax"></select>
+
+
+
+
+    <p>OutSide the table</p>
+    <select id="Outside">
+        <option selected="selected" value="0">All dead</option>
+        <option value="1">All live</option>
+        <option value="2">The other side</option>
+    </select>
+
+
+</div>
+
+
+
+
+</body>
+</html>
